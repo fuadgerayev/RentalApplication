@@ -1,0 +1,67 @@
+﻿<Window x:Class="RentalApplication.Customer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RentalApplication"
+        mc:Ignorable="d" FontSize="18" FontFamily="Segoe UI Light"
+        WindowStartupLocation="CenterScreen"
+        Title="Customer Info" Height="450" Width="700" Icon="Images/bikeSmall.png">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" Text="Fill your information below" 
+                   FontSize="24" Margin="0,10,10,10" />
+
+        <TextBlock Grid.Column="1" Grid.Row="2" Text="First name" Margin="0,10,10,10"/>
+
+        <TextBox Name="tbFirstname" Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2" Margin="0,10,10,10" />
+
+        <TextBlock Grid.Column="1" Grid.Row="3" Text="Last name" Margin="0,10,10,10"/>
+
+        <TextBox Name="tbLastname" Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="2" Margin="0,10,10,10" />
+
+        <TextBlock Grid.Column="1" Grid.Row="4" Text="E-mail" Margin="0,10,10,10"/>
+
+        <TextBox Name="tbEmail" Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="2" Margin="0,10,10,10" />
+
+        <TextBlock Grid.Column="1" Grid.Row="5" Text="Phone number" Margin="0,10,10,10"/>
+
+        <TextBox Name="tbPhoneNumber" Grid.Column="2" Grid.Row="5" Grid.ColumnSpan="2" Margin="0,10,10,10" />
+
+        <TextBlock Name="tblTotalPrice" Grid.Column="1" Grid.Row="6" Text="" Grid.ColumnSpan="3" Margin="0,10,10,10" />
+
+        <Button x:Name="bSumbit" Click="bSumbit_Click" Content="Confirm" Grid.Column="2" Grid.Row="8" 
+                Cursor="Hand" Background="#FF105287" BorderBrush="#FF105287" 
+                FontFamily="Segoe UI" Foreground="White" Margin="20"/>
+        
+        <Image Grid.Column="4" Grid.Row="2" Margin="10" Grid.RowSpan="8"
+               Source="Images/scooterBig.png" >
+        </Image>
+
+    </Grid>
+</Window>
+    
+    
+ 
